@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "lib": ["ES6", "ES2023"],
+        "esModuleInterop": true,
+        "target": "ES6",
+        "outDir": "dist/esm",
+        "module": "ES2015"
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "lib": ["ES6"],
+            "target": "ES6",
+            "module": "ES2015",
+            "esModuleInterop": true,
+        }
+    },
+    "include": ["src"]
+}

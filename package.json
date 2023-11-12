@@ -1,0 +1,33 @@
+{
+  "name": "@chocolatemilkdev/emitter",
+  "version": "1.0.0",
+  "description": "a basic event emitter.",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.mjs",
+  "types": "./dist/global.d.ts",
+  "browser": "./dist/umd/index.global.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc & tsc --project tsconfig.mjs.json & tsc --project tsconfig.umd.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Volgite/emitter.git"
+  },
+  "keywords": [
+    "Emitter",
+    "Event",
+    "EventEmitter"
+  ],
+  "author": "Davut Özgür Süküti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Volgite/emitter/issues"
+  },
+  "homepage": "https://github.com/Volgite/emitter#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}

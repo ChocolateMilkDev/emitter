@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "lib": ["ES6", "ES2023"],
+        "esModuleInterop": true,
+        "target": "ES6",
+        "outDir": "dist/umd",
+        "module": "UMD"
+    },
+    "ts-node": {
+        "compilerOptions": {
+            "lib": ["ES6"],
+            "target": "ES6",
+            "module": "UMD",
+            "esModuleInterop": true
+        }
+    },
+    "include": ["src"]
+}
