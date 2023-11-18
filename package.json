@@ -1,6 +1,6 @@
 {
   "name": "@chocolatemilkdev/emitter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a basic event emitter.",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.mjs",
