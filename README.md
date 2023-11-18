@@ -16,6 +16,12 @@ a basic event emitter.
 
 - ES6/ES2015 or newer required.
 
+### 1.0.1
+
+- once function bug fix
+- typing fix.
+- added onceAsync function
+
 ## Usage
 
 ```js
@@ -28,8 +34,16 @@ const emitter = new ChocolateMilkEmitter()
 emitter.on("a", (number) => {
     console.log(number)
 })
+emitter.once("b", (str) => {
+    console.log(str)
+})
+emitter.onceAsync("b").then(([bool]) => {
+    console.log(bool)
+})
 
 emitter.emit("a", 1)
+emitter.emit("b", "b")
+emitter.emit("c", true)
 
 emitter.hasListener("a", (number) => {
     console.log(number)
@@ -40,8 +54,8 @@ emitter.isEmitted("a")//true
 ### Note: Typing Events
 ```ts
 interface MyEvents{
-    eat: (food: string) => any;
-    drink: (drink: string) => string;
+    eat(food: string): any;
+    drink(drink: string): string;
 }
 
 const emitter = new ChocolateMilkEmitter<MyEvents>()
